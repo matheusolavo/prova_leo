@@ -3,4 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const listaGastos = document.getElementById('lista-gastos');
     const totalElement = document.getElementById('total');
     let totalGasto = 0;
+    formGasto.addEventListener('submit', function(event) {
+        event.preventDefault();
+    });
 });
