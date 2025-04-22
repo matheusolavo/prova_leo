@@ -59,3 +59,37 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #4cae4c;
 }
+
+#lista-gastos {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-gastos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#lista-gastos li:last-child {
+    border-bottom: none;
+}
+
+.gasto-info {
+    flex-grow: 1;
+}
+
+.remover-gasto-btn {
+    background: none;
+    border: none;
+    color: #d9534f;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.remover-gasto-btn:hover {
+    color: #c9302c;
+}
