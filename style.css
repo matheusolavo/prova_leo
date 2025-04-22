@@ -103,3 +103,8 @@ button[type="submit"]:hover {
 .total-gastos strong {
     font-weight: bold;
 }
+
+.gasto-alto {
+    color: red;
+    font-weight: bold; 
+}
