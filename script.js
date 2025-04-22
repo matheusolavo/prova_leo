@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const descricao = document.getElementById('descricao').value;
         const valor = parseFloat(document.getElementById('valor').value);
         const categoria = document.getElementById('categoria').value;
-        
+
     if (descricao && !isNaN(valor)) {
             adicionarGasto(descricao, valor, categoria);
             formGasto.reset();
@@ -30,5 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
             <button class="remover-gasto-btn">x</button>
         `;
         listaGastos.appendChild(novoItem);
+        atualizarTotal(valor);
+    }
+
+    function removerGasto(itemParaRemover, valorRemovido) {
+        listaGastos.removeChild(itemParaRemover);
+        atualizarTotal(-valorRemovido);
+    }
+    
+    function atualizarTotal(valor) {
+        totalGasto += valor;
+        totalElement.textContent = totalGasto.toFixed(2);
     }
 });
