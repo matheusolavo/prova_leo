@@ -93,3 +93,13 @@ button[type="submit"]:hover {
 .remover-gasto-btn:hover {
     color: #c9302c;
 }
+
+.total-gastos {
+    text-align: right;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.total-gastos strong {
+    font-weight: bold;
+}
